@@ -19,7 +19,10 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+\documentclass[a4paper]{twentysecondcv} % a4paper for A4
+
+\usepackage{natbib}
+%\usepackage[natbibapa]{apacite}
 
 %----------------------------------------------------------------------------------------
 %	 PERSONAL INFORMATION
@@ -80,7 +83,7 @@
 
 \section{Interests}
 
-The heroine and the dreamer of Wonderland; Alice is the principal character.
+
 
 %----------------------------------------------------------------------------------------
 %	 EDUCATION
@@ -89,10 +92,12 @@ The heroine and the dreamer of Wonderland; Alice is the principal character.
 \section{Education}
 
 \begin{twenty} % Environment for a list with descriptions
-	\twentyitem{since 1865}{Ph.D. {\normalfont candidate in Computer Science}}{Wonderland}{\emph{A Quantified Theory of Social Cohesion.}}
-	\twentyitem{1863-1865}{M.Sc. magna cum laude}{Wonderland}{Majoring in Computer Science}
-	\twentyitem{1861-1863}{B.Sc. magna cum laude}{Wonderland}{Majoring in Computer Science}
-	\twentyitem{1856-1861}{High school}{Wonderland}{Specializing in mathematics and physics.}
+	\twentyitem{2016-2018}{Ph.D. {\normalfont candidate in Computer Science}}{TU Graz}{\emph{Research in privacy-aware Machine Learning}, ongoing}
+	\twentyitem{2014-2016}{M.Sc. software engineering }{TU Graz}{Thesis in \emph{Graphinius - an online graph exploration platform}}
+	\twentyitem{2005-2014}{B.Sc. software engineering \& business administration}{TU Graz}{Thesis in \emph{graph extraction from image data}}
+	\twentyitem{2002-2005}{Studies of Economics}{KF University, Graz}{Special interest in political economics; not graduated}
+	\twentyitem{1999-2002}{College of further education}{Graz, Austria}{Specializing in mathematics and physics.}
+	\twentyitem{1997-1998}{ITCP Information Technology Certified Professional}{Wifi Graz}{}
 	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
 \end{twenty}
 
@@ -103,23 +108,31 @@ The heroine and the dreamer of Wonderland; Alice is the principal character.
 \section{Publications}
 
 \begin{twentyshort} % Environment for a short list with no descriptions
-	\twentyitemshort{1865}{Chapter One, Down the Rabbit Hole.}
-	\twentyitemshort{1865}{Chapter Two, The Pool of Tears.}
-	\twentyitemshort{1865}{Chapter Three,  The Caucus Race and a Long Tale.}
-	\twentyitemshort{1865}{Chapter Four,  The Rabbit Sends a Little Bill.}
-	\twentyitemshort{1865}{Chapter Five,  Advice from a Caterpillar.}
+	\twentyitemshort{2018}{\citeyearpar{Need4Speed} The Need for Speed. Comparison of JS vs. C++ - generated ASM.js / WASM}
+	\twentyitemshort{2017}{\citeyearpar{InteractiveAnonymization} Interactive Anonymization for Privacy aware Machine Learning}
+	\twentyitemshort{2017}{\citeyearpar{FedPaper} The more the merrier - federated learning from local sphere recommendations}
+	\twentyitemshort{2017}{\citeyearpar{PAML2} Do not disturb? - classifier behavior on perturbed datasets}
+	\twentyitemshort{2016}{\citeyearpar{PAML1} The Right to be forgotten. Towards Machine Learning on perturbed knowledge bases}
+	
+%	\cite{PAML1}
+%	\cite{Need4Speed}
+	
 	%\twentyitemshort{<dates>}{<title/description>}
 \end{twentyshort}
 
 %----------------------------------------------------------------------------------------
-%	 AWARDS
+%	 CONFERENCES
 %----------------------------------------------------------------------------------------
 
-\section{Awards}
+\section{Conference talks}
 
 \begin{twentyshort} % Environment for a short list with no descriptions
-	\twentyitemshort{1987}{All-Time Best Fantasy Novel.}
-	\twentyitemshort{1998}{All-Time Best Fantasy Novel before 1990.}
+	\twentyitemshort{2017}{ECML - European Conference on Machine Learning, Skopje, Macedonia}
+	\twentyitemshort{2017}{CD-MAKE - Cross disciplinary ML and Knowledge Extraction, Reggio Calabria, Italy}
+	\twentyitemshort{2017}{ARES - Conference on Availability, Reliability and Security, Reggio Calabria, Italy}
+	\twentyitemshort{2017}{Security Forum Hagenberg, Linz, Austria}	
+	\twentyitemshort{2016}{ÖGAI (Austrian society for AI) Meeting , Klagenfurt, Austria}
+	\twentyitemshort{2016}{ARES - Conference on Availability, Reliability and Security, Salzburg, Austria}
 	%\twentyitemshort{<dates>}{<title/description>}
 \end{twentyshort}
 
@@ -130,9 +143,12 @@ The heroine and the dreamer of Wonderland; Alice is the principal character.
 \section{Experience}
 
 \begin{twenty} % Environment for a list with descriptions
-	\twentyitem{1900}{Alice in Wonderland-The Circra (1900's) Silent Film.}{Film}{The first Alice on film was over a hundred years ago.}
-	\twentyitem{1933}{Alice in Wonderland 1933 version.}{Film}{This film stars Ethel griffies and Charlotte Henry. It was a box office flop when it was released.}
-	\twentyitem{1951}{Disney Film.}{Film}{Walt Disney brings Lewis Carroll's fantasy story to life in this well done animated classic. Even though many elements from the book were dropped, such as the duchess with the baby pig and mock turtle, this version is without a doubt the most famous Alice adaption made.}
+	\twentyitem{2016-2018}{ Member of the Austrian KIRAS funded project Darknet.
+	}{Project}{}
+	\twentyitem{2015-2018}{ Employee at Secure Business Austria (SBA) Research GmbH, Vienna, Austria.
+	}{Project}{}
+	\twentyitem{2014-2018}{ Member of the HCI-KDD research group at Medical University Graz, Austria.
+	}{Research}{}
 	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
 \end{twenty}
 
@@ -150,22 +166,25 @@ Alice approaches Wonderland as an anthropologist, but maintains a strong sense o
 %	 SECOND PAGE EXAMPLE
 %----------------------------------------------------------------------------------------
 
-%\newpage % Start a new page
+\newpage % Start a new page
 
-%\makeprofile % Print the sidebar
+\makeprofile % Print the sidebar
 
-%\section{Other information}
+\section{Other information}
 
-%\subsection{Review}
+\subsection{Review}
 
-%Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
+Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
 
-%\section{Other information}
+\section{Other information}
 
-%\subsection{Review}
+\subsection{Review}
 
-%Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
+Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
 
 %----------------------------------------------------------------------------------------
+
+\bibliographystyle{agsm}
+\bibliography{references.bib}
 
 \end{document} 
