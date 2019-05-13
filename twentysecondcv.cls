@@ -119,14 +119,14 @@
 		%------------------------------------------------
 		
 		\ifthenelse{\equal{\profilepic}{}}{}{
-			\vspace{0.3cm}
+			\vspace{0.4cm}
 			\begin{center}
 				\begin{tikzpicture}[x=\imagescale, y=-\imagescale]
-				\clip (0, 0) circle (200);
-				\node[anchor=center, inner sep=0pt, outer sep=0pt] at (0,0) {\includegraphics[width=.7\imagewidth, height=.7\imagewidth]{\profilepic}};
+				\clip (0, 0) circle (220);
+				\node[anchor=center, inner sep=0pt, outer sep=0pt] at (0,0) {\includegraphics[width=.8\imagewidth, height=.8\imagewidth]{\profilepic}};
 				\end{tikzpicture}
 			\end{center}
-			\vspace{0.4cm}
+			\vspace{0.5cm}
 		}
 
 		%------------------------------------------------
