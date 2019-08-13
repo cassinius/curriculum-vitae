@@ -118,12 +118,13 @@
 			
 		%------------------------------------------------
 		
+		% STILL A COMPLETE MYSTERY TO ME....
 		\ifthenelse{\equal{\profilepic}{}}{}{
 			\vspace{0.4cm}
 			\begin{center}
 				\begin{tikzpicture}[x=\imagescale, y=-\imagescale]
-				\clip (0, 0) circle (220);
-				\node[anchor=center, inner sep=0pt, outer sep=0pt] at (0,0) {\includegraphics[width=.8\imagewidth, height=.8\imagewidth]{\profilepic}};
+				\clip (300, 300) circle (300);
+				\node[anchor=north west, inner sep=0pt, outer sep=0pt] at (0,0) {\includegraphics[width=\imagewidth, height=\imagewidth]{\profilepic}};
 				\end{tikzpicture}
 			\end{center}
 			\vspace{0.5cm}
@@ -151,10 +152,14 @@
 		%------------------------------------------------
 		
 		\ifthenelse{\equal{\aboutme}{}}{}{
+			\vspace{0.3cm}
+
 			\profilesection{About me}
 			\begin{flushleft}
 				\aboutme
 			\end{flushleft}
+
+			\vspace{0.3cm}
 		}
 
 		%------------------------------------------------
@@ -164,7 +169,6 @@
 		\skills
 		\skillstext
 		\scriptsize
-		(*)[The skill scale is from 0 (Fundamental Awareness) to 6 (Expert).]
 			
 		%------------------------------------------------
 			
