@@ -164,7 +164,7 @@
 
 		%------------------------------------------------
 
-		\profilesection{Skills}
+		\profilesection{Top Skills}
 
 		\skills
 		\skillstext
